@@ -1,0 +1,17 @@
+﻿<en-US>
+Added a view with a big OFF button and a settings dialog.
+Device Administrator permissions can be added and removed via the new settings dialog.
+Shows English, German or Russian texts debending on system locale.
+</en-US>
+
+<de-DE>
+App öffnet nun Ansicht mit großem AUS Knopf und es gibt einen Dialog für Einstellungen.
+Geräteadministrator Rechte können über den Einstellungen Dialog hinzugefügt und wieder entfernt werden.
+Anzeige in Englisch, Deutsch oder Russisch abhängig von der Systemeinstellung.
+</de-DE>
+
+<ru-RU>
+Приложение показывает сначало большой выключатель. Есть диалог настроек.
+Права Админстратора Устройства можно добавить и убрать через новый диалог настройек.
+Локализация на английский, немецкий и русский язык в зависимости от настройки системы.
+</ru-RU>

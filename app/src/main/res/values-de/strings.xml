@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Schirm Aus</string>
+    <string name="device_admin_description">Diese App braucht die Geräteadministrator Berechtigung, um den Bildschirm abzuschalten und zu sperren.</string>
+    <string name="device_admin_enabled_toast">Berechtigung erteilt!</string>
+    <string name="im_btn_off_description">Display ausschalten und sperren</string>
+    <string name="btn_config_text">Einstellungen</string>
+    <string name="tv_admin_state_positive">Sie verfügt bereits über diese Berechtigung.</string>
+    <string name="tv_admin_state_negative">Sie verfügt derzeit NICHT über diese Berechtigung!</string>
+    <string name="btn_switch_admin_on">Berechtigung anfordern...</string>
+    <string name="btn_switch_admin_off">Berechtigung zurückgeben</string>
+    <string name="tv_start_mode_pre">Aktiviere die folgende Option, wenn die App das Display sofort bei ihrem Start abschalten soll, anstatt vorher den großen AUS Knopf anzuzeigen.</string>
+    <string name="sw_start_mode">Aktiviere sofortige Sperrung</string>
+    <string name="device_admin_disabled_toast">Berechtigung entzogen!</string>
+    <string name="sw_end_mode">App nach Sperrung beenden</string>
+    <string name="tv_warning">Warnung: Du wirst diesen Dialog nie wieder erreichen können!\n(Nur nach Neuinstallation der App oder Rücknahme der Berechtigung zur Geräteadministration über Android Einstellungen/Apps/Spezieller Zugriff/Geräteadministrator-Apps)</string>
+</resources>

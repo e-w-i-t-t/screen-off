@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Отключи Экран</string>
+    <string name="device_admin_description">Этому приложению нужно право Администратора Устройства, что-бы отключять и блокировать экран.</string>
+    <string name="device_admin_enabled_toast">Право данно!</string>
+    <string name="im_btn_off_description">Отключить и заблокировать экран</string>
+    <string name="btn_config_text">Настройки</string>
+    <string name="tv_admin_state_positive">У него уже есть это право.</string>
+    <string name="tv_admin_state_negative">У него сейчас ещё НЕТ этого право!</string>
+    <string name="btn_switch_admin_on">Запросить прово...</string>
+    <string name="btn_switch_admin_off">Отказаться от права</string>
+    <string name="tv_start_mode_pre">Включи следующию опцию, что-бы приложение отключало экран сразу при старте и не показывало сначало большую выключательную кнопку.</string>
+    <string name="sw_start_mode">Активировать немедленное отключение</string>
+    <string name="device_admin_disabled_toast">Право удалённо!</string>
+    <string name="sw_end_mode">Отключать приложение после отключения экрана</string>
+    <string name="tv_warning">Внимание: Так будет невозможно вернуться в этот диалог!\n(Только после переустанавления этого приложения или удалания прав Администратора Устройства через Android Настройки/Приложения/Особые права доступа/Администраторы устройства)</string>
+</resources>
