@@ -4,8 +4,6 @@
     <string name="device_admin_description">This app needs the Device Administrator permission to turn off and lock the screen.</string>
     <string name="im_btn_off_description">Turn off and lock the screen</string>
     <string name="btn_config_text">Settings</string>
-    <string name="preferences_file" translatable="false">de.ewitt.screenoff.preferences</string>
-    <string name="preferences_key_immediate" translatable="false">de.ewitt.screenoff.preferences.immediate</string>
     <string name="tv_admin_state_positive">It does already have this permission.</string>
     <string name="tv_admin_state_negative">It currently does NOT have this permission!</string>
     <string name="btn_switch_admin_on">Request permission...</string>
@@ -14,7 +12,12 @@
     <string name="sw_start_mode">Enable immediate lock</string>
     <string name="device_admin_disabled_toast">Permission removed!</string>
     <string name="sw_end_mode">Close app after lock</string>
+    <string name="sw_hide_mode">Hide app after lock</string>
     <string name="tv_warning">Warning: You\'ll never be able to reach this dialog again!\n(Only after reinstalling the app or disabling its Device Admin permission via Android Settings/Apps/Special Access/Device Admin Apps.)</string>
+
+    <string name="preferences_file" translatable="false">de.ewitt.screenoff.preferences</string>
+    <string name="preferences_key_immediate" translatable="false">de.ewitt.screenoff.preferences.immediate</string>
     <string name="preferences_key_exit" translatable="false">de.ewitt.screenoff.preferences.exit</string>
+    <string name="preferences_key_hide" translatable="false">de.ewitt.screenoff.preferences.hide</string>
 
 </resources>

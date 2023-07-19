@@ -44,8 +44,26 @@
                 android:layout_marginRight="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
+                android:enabled="true"
                 android:onClick="switchEndMode"
                 android:text="@string/sw_end_mode"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/swHideMode" />
+
+            <Switch
+                android:id="@+id/swHideMode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:enabled="true"
+                android:onClick="switchHideMode"
+                android:text="@string/sw_hide_mode"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -76,6 +94,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:checked="false"
+                android:enabled="true"
                 android:onClick="switchStartMode"
                 android:text="@string/sw_start_mode"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
@@ -137,7 +156,7 @@
                     android:id="@+id/hr"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
-                    android:background="#444"></TableRow>
+                    android:background="#444"/>
 
 
             </LinearLayout>

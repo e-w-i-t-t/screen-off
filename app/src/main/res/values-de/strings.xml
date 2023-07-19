@@ -13,5 +13,6 @@
     <string name="sw_start_mode">Aktiviere sofortige Sperrung</string>
     <string name="device_admin_disabled_toast">Berechtigung entzogen!</string>
     <string name="sw_end_mode">App nach Sperrung beenden</string>
+    <string name="sw_hide_mode">App nach Sperrung verstecken</string>
     <string name="tv_warning">Warnung: Du wirst diesen Dialog nie wieder erreichen können!\n(Nur nach Neuinstallation der App oder Rücknahme der Berechtigung zur Geräteadministration über Android Einstellungen/Apps/Spezieller Zugriff/Geräteadministrator-Apps)</string>
 </resources>

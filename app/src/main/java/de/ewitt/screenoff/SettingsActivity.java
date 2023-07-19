@@ -42,6 +42,7 @@ public class SettingsActivity extends AppCompatActivity {
         TextView tvW  = findViewById(R.id.tvWarning);
         Button btn = findViewById(R.id.btnSwitchAdmin);
         Switch swS = findViewById(R.id.swStartMode);
+        Switch swH = findViewById(R.id.swHideMode);
         Switch swE = findViewById(R.id.swEndMode);
 
         tv.setText(getString(active ? R.string.tv_admin_state_positive : R.string.tv_admin_state_negative));
@@ -51,35 +52,34 @@ public class SettingsActivity extends AppCompatActivity {
         Context context = SettingsActivity.this;
         SharedPreferences sharedPref = context.getSharedPreferences(getString(R.string.preferences_file), Context.MODE_PRIVATE);
         boolean immediate = sharedPref.getBoolean(getString(R.string.preferences_key_immediate), false);
+        boolean hide = sharedPref.getBoolean(getString(R.string.preferences_key_hide), false);
         boolean exit = sharedPref.getBoolean(getString(R.string.preferences_key_exit), false);
 
         swS.setChecked(immediate);
-
-        swE.setChecked(immediate && exit);
-        swE.setEnabled(immediate);
+        swH.setChecked(hide);
+        swE.setChecked(exit);
 
         tvW.setVisibility((immediate && exit && active) ? View.VISIBLE : View.GONE);
     }
 
     public void switchStartMode(View view) {
-        Switch sw = findViewById(R.id.swStartMode);
-        Context context = SettingsActivity.this;
-        SharedPreferences sharedPref = context.getSharedPreferences(getString(R.string.preferences_file), Context.MODE_PRIVATE);
-        SharedPreferences.Editor prefEditor = sharedPref.edit();
-        prefEditor.putBoolean(getString(R.string.preferences_key_immediate), sw.isChecked());
-        if (!sw.isChecked()) {
-            prefEditor.putBoolean(getString(R.string.preferences_key_exit), false);
-        }
-        prefEditor.apply();
-        updateStates(false);
+        switchMode(R.id.swStartMode, R.string.preferences_key_immediate);
+    }
+
+    public void switchHideMode(View view) {
+        switchMode(R.id.swHideMode, R.string.preferences_key_hide);
     }
 
     public void switchEndMode(View view) {
-        Switch sw = findViewById(R.id.swEndMode);
+        switchMode(R.id.swEndMode, R.string.preferences_key_exit);
+    }
+
+    private void  switchMode(int viewId, int keyStringId) {
+        Switch sw = findViewById(viewId);
         Context context = SettingsActivity.this;
         SharedPreferences sharedPref = context.getSharedPreferences(getString(R.string.preferences_file), Context.MODE_PRIVATE);
         SharedPreferences.Editor prefEditor = sharedPref.edit();
-        prefEditor.putBoolean(getString(R.string.preferences_key_exit), sw.isChecked());
+        prefEditor.putBoolean(getString(keyStringId), sw.isChecked());
         prefEditor.apply();
         updateStates(false);
     }

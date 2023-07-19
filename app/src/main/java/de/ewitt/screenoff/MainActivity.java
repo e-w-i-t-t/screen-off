@@ -26,13 +26,18 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPref = context.getSharedPreferences(getString(R.string.preferences_file), Context.MODE_PRIVATE);
         boolean immediate = sharedPref.getBoolean(getString(R.string.preferences_key_immediate), false);
         boolean doExit = sharedPref.getBoolean(getString(R.string.preferences_key_exit), false);
+        boolean doHide = sharedPref.getBoolean(getString(R.string.preferences_key_hide), false);
         if (immediate && (savedInstanceState == null)) {
-            doLockScreen(true, doExit);
+            doLockScreen(doHide, doExit);
         }
     }
 
     public void lockScreen(View view) {
-        doLockScreen(false, false);
+        Context context = MainActivity.this;
+        SharedPreferences sharedPref = context.getSharedPreferences(getString(R.string.preferences_file), Context.MODE_PRIVATE);
+        boolean doExit = sharedPref.getBoolean(getString(R.string.preferences_key_exit), false);
+        boolean doHide = sharedPref.getBoolean(getString(R.string.preferences_key_hide), false);
+        doLockScreen(doHide, doExit);
     }
 
     public void gotoSettings(View view) {
@@ -44,12 +49,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void doLockScreen(boolean hide, boolean doExit) {
+    private void doLockScreen(boolean doHide, boolean doExit) {
         if (! mDPM.isAdminActive(mDeviceAdmin)) {
             doGotoSettings();
         } else {
             mDPM.lockNow();
-            if (hide) {
+            if (doHide) {
                 moveTaskToBack(true);
             }
             if (doExit) {
