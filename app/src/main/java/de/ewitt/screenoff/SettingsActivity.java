@@ -6,12 +6,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Switch;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -32,6 +33,15 @@ public class SettingsActivity extends AppCompatActivity {
         mDPM = (DevicePolicyManager)getSystemService(Context.DEVICE_POLICY_SERVICE);
         mDeviceAdmin = new ComponentName(SettingsActivity.this, MyDeviceAdminReceiver.class);
 
+        Button btn = findViewById(R.id.btnSwitchAdmin);
+        btn.setOnClickListener(this::switchAdminMode);
+        SwitchCompat swS = findViewById(R.id.swStartMode);
+        swS.setOnClickListener(this::switchStartMode);
+        SwitchCompat swH = findViewById(R.id.swHideMode);
+        swH.setOnClickListener(this::switchHideMode);
+        SwitchCompat swE = findViewById(R.id.swEndMode);
+        swE.setOnClickListener(this::switchEndMode);
+
         updateStates(false);
     }
 
@@ -41,9 +51,9 @@ public class SettingsActivity extends AppCompatActivity {
         TextView tv  = findViewById(R.id.tvAdminState);
         TextView tvW  = findViewById(R.id.tvWarning);
         Button btn = findViewById(R.id.btnSwitchAdmin);
-        Switch swS = findViewById(R.id.swStartMode);
-        Switch swH = findViewById(R.id.swHideMode);
-        Switch swE = findViewById(R.id.swEndMode);
+        SwitchCompat swS = findViewById(R.id.swStartMode);
+        SwitchCompat swH = findViewById(R.id.swHideMode);
+        SwitchCompat swE = findViewById(R.id.swEndMode);
 
         tv.setText(getString(active ? R.string.tv_admin_state_positive : R.string.tv_admin_state_negative));
         tv.setTextColor(active ? Color.BLACK : tvW.getCurrentTextColor());
@@ -75,7 +85,7 @@ public class SettingsActivity extends AppCompatActivity {
     }
 
     private void  switchMode(int viewId, int keyStringId) {
-        Switch sw = findViewById(viewId);
+        SwitchCompat sw = findViewById(viewId);
         Context context = SettingsActivity.this;
         SharedPreferences sharedPref = context.getSharedPreferences(getString(R.string.preferences_file), Context.MODE_PRIVATE);
         SharedPreferences.Editor prefEditor = sharedPref.edit();

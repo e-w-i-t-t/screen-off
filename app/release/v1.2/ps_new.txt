@@ -1,0 +1,11 @@
+﻿<en-US>
+Added a setting for hiding the app after turning the screen off. Previously only closing the app was available. Both setting now work independently of the setting for turning the screen off immediately at start-up or showing the big OFF button.
+</en-US>
+
+<de-DE>
+Eine Option zum verstecken der App nach dem Bildschirmausschalten wurde hinzugefügt. Vorher war nur das Beenden der App möglich. Beide Einstellungen funktionieren jetzt unabhängig davon,  ob die App schon beim Start den Bildschirm auschaltet oder erst den großen AUS Knopf zeigt.
+</de-DE>
+
+<ru-RU>
+Добавилась возможность прятать приложение после выключения экрана. До этого оно могло только полностью отключатся. Обе эти опции теперь не зависимы от того, отключает ли программа экран уже при своём старте или показтывает сначало большую кнопку ВЫКЛЮЧИТЬ.
+</ru-RU>

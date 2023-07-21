@@ -1,0 +1,59 @@
+﻿
+### English ###############################################
+
+>>> Title: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Screen Off (by ewitt)
+
+>>> Short: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Turns off and locks the screen
+
+>>> Long: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Turns off and locks the screen. Depending on settings from the first app dialog or immediatelly when app icon is tapped.
+
+On first run user must grant the app the right to do so --> This app uses the Device Administrator permission!
+
+Unlock again by pin or pattern - NOT by fingerprint. (This is a build in restriction of the Android OS after a lock from software.)
+
+Uninstall via Settings -> Apps -> Screen Off -> Uninstall. 
+(If the app still holds the admin right to turn off the screen, then uninstalling from home screen or app menu, by long-pressing the app icon and selecting uninstall won't work!)
+
+### German ################################################
+
+>>> Title: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Schirm Aus (von ewitt)
+
+>>> Short: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Schaltet den Bildschirm aus und sperrt das Gerät
+
+>>> Long: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Schaltet den Bildschirm aus und sperrt das Gerät. Abhängig von den Einstellungen aus dem ersten App Dialog heraus oder sofort wenn das App Icon angetippt wird.
+
+Beim ersten Mal muss der Benutzer der App das Recht dazu erteilen --> Diese App benötigt die Erlaubnis zur Geräteadminstration! (@Google: This app uses the Device Administrator permission.)
+
+Entsperrung geht danach nur per PIN oder Muster NICHT per Fingerabdruck. (Das ist eine Einschränkung des Android Betriebssystems nach einer Sperre durch Software.)
+
+Deinstallieren über Einstellungen -> Apps -> Schirm Aus -> Deinstallieren.
+(Solange die App über das Admin-Recht zur Sperrung des Bildschirms verfügt, kann mann sie nicht durch langes drücken des Icons auf dem Startbildschirm oder im App-Menü deinstallieren!)
+
+### Russian ###############################################
+
+>>> Title: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Отключи Экран (by ewitt)
+
+>>> Short: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Отключяет и блокирует экран
+
+>>> Long: >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Отключяет и блокирует экран. В зависимости от настроек это делаеться из первого диалога или сразу при нажатие символа приложения.
+
+Пользователь должен дать приложению прово на это --> Этому приложению нужно право Администратора устройства! (@Google: This app uses the Device Administrator permission.)
+
+После этого разблокировка экрана возможна только введением пин-кода а НЕ по шаблону или отпечатком пальца. (Это ограничение системы Android после программной блокировки.)
+
+Убрать приложение с устройство можне через Настройки Android -> Приложения -> Отключи Экран -> Удалить
+(Пока приложение имеет право администратора отключать экран, его невозможно удалить другим способом, например через меню приложений!)
+
+
+
+
+

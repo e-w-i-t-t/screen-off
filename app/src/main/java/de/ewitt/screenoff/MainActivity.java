@@ -5,9 +5,11 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,6 +23,12 @@ public class MainActivity extends AppCompatActivity {
 
         mDPM = (DevicePolicyManager)getSystemService(Context.DEVICE_POLICY_SERVICE);
         mDeviceAdmin = new ComponentName(MainActivity.this, MyDeviceAdminReceiver.class);
+
+        Button btn = findViewById(R.id.btnConfig);
+        btn.setOnClickListener(this::gotoSettings);
+        ImageButton imgBtn = findViewById(R.id.imBtnOff);
+        imgBtn.setOnClickListener(this::lockScreen);
+
 
         Context context = MainActivity.this;
         SharedPreferences sharedPref = context.getSharedPreferences(getString(R.string.preferences_file), Context.MODE_PRIVATE);
